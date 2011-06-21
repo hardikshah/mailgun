@@ -10,7 +10,9 @@ class Message
   end
 
   def save()
-    Notifier.welcome.deliver
+    10.times do 
+      Notifier.welcome("kontsevoy@hotmail.com").deliver
+    end
     true
   end
 
