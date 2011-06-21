@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  description: MyString
+  duedate: 2011-06-20 17:30:28
+
+two:
+  name: MyString
+  description: MyString
+  duedate: 2011-06-20 17:30:28
