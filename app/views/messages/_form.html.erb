@@ -1,0 +1,7 @@
+<%= form_tag messages_path do %>
+  <%= email_field_tag "recipient" %> 
+  <%= text_field_tag "subject" %>
+  <%= text_area_tag "body" %>
+
+  <%= submit_tag %>
+<% end %>
