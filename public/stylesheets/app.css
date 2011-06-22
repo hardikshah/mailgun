@@ -1,0 +1,3 @@
+form label { width: 70pt; display: inline-block }
+form textarea { margin-left: 72pt; width: 300pt; height: 80pt }
+form input[type=submit] { margin-left: 72pt }

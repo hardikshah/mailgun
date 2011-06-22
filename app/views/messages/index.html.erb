@@ -1,21 +1,15 @@
-<h1>Haha! Messages!</h1>
+<%= form_tag messages_path do %>
+  <label>To:</label>
+  <%= email_field_tag "recipient", "ev@mailgun.net" %> 
+  <br>
 
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+  <label>Subject:</label>
+  <%= text_field_tag "subject", "Hello from Heroku" %>
+  <br>
 
-<% @messages.each do |message| %>
-  <tr>
-    <td><%= link_to 'Show', message %></td>
-    <td><%= link_to 'Edit', edit_message_path(message) %></td>
-    <td><%= link_to 'Destroy', message, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+
+  <%= text_area_tag "body", "Howdy!" %>
+  <br>
+  <%= submit_tag "Send" %>
 <% end %>
-</table>
 
-<br />
-
-<%= link_to 'New Message', new_message_path %>
